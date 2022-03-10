@@ -13,9 +13,7 @@ AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
-
-
-## Acceptance Criteria
+## Function
 
 ```
 GIVEN a note-taking application
@@ -32,29 +30,23 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+## Prerequisites
+* [NodeJS](https://nodejs.org/)
 
+## Installing
 
-## Mock-Up
+Clone the repository to your local development environment.
 
-The following images show the web application's appearance and functionality:
+```
+git clone https://github.com/Invogue01/note-taking-app
+```
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+Navigate to the developer-profile-generator folder using the command prompt.
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open `http://localhost:3000` in your preferred browser. The Note Taker app is [live on Heroku](https://not-taking-app.herokuapp.com/notes) for you to use as well.
+## Deployed Heroku Link
 
+[Note Taking App](https://not-taking-app.herokuapp.com/)
 
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+## Preview:
+![Application Preview](appdemo.gif)
