@@ -1,30 +1,15 @@
 {
-  "name": "note-taking-app",
+  "name": "note-taker",
   "version": "1.0.0",
-  "description": "write save and retrieve notes",
+  "description": "An app for saving, viewing, and deleting notes.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Invogue01/note-taking-app.git"
-  },
-  "keywords": [
-    "javascript",
-    "express.js",
-    "node.js"
-  ],
-  "author": "andrea mac",
+  "author": "Amanda Atkins",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Invogue01/note-taking-app/issues"
-  },
-  "homepage": "https://github.com/Invogue01/note-taking-app#readme",
   "dependencies": {
-    "express": "^4.17.3",
-    "fs": "^0.0.1-security",
-    "inquirer": "^8.2.1",
-    "path": "^0.12.7"
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
   }
 }
